@@ -20,7 +20,7 @@ client.on("message", message => {
   if (message.content === "!play") {
     if (!message.member.voice.channel) return message.reply("You have to be in a VoiceChannel");
       message.member.voice.channel.join().then(VoiceConnection => {
-          VoiceConnection.play(ytdl(https://www.youtube.com/watch?v=yPJcZOXh87U&ab_channel=SQUEEZIEGAMING).on("finish", () => 
+          VoiceConnection.play(ytdl(https://www.youtube.com/watch?v=yPJcZOXh87U&ab_channel=SQUEEZIEGAMING)).on("finish", () => 
           VoiceConnection.disconnect());
           message.reply("done");
     }).catch(e => console.log(e))
