@@ -20,7 +20,7 @@ client.on("message", message => {
   if (message.content === "!play") {
     if (!message.member.voice.channel) return message.reply("You have to be in a VoiceChannel");
       message.member.voice.channel.join().then(VoiceConnection => {
-          VoiceConnection.play(audio.mp3).on("finish", () => 
+          VoiceConnection.play("audio.mp3").on("finish", () => 
           VoiceConnection.disconnect());
           message.reply("done");
     }).catch(e => console.log(e))
