@@ -12,7 +12,7 @@ client.login(process.env.token);
 
 client.on("message", message => {
     if (message.content === "!indice") {
-      message.channel.send("rejoint le salon vocal est envoie moi !play, je te rejoindrai.")
+      message.channel.send("+play https://www.youtube.com/watch?v=PAiY4r3fI0k&ab_channel=ConstantDassonville")
     }
   })
 
