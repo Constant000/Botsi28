@@ -10,6 +10,10 @@ client.once('ready', () => {
 
 client.login(process.env.token);
 
+client.on("guildMemberAdd",member => {
+   member.guild.channels.find("name","accueil").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille de commencer la conversation par bonjour')
+})
+
 client.on("message", message => {
     if (message.content === "!indice") {
       message.channel.send("essaye de réussir le pacman, tu auras un indice à la fin, pour trouver le pacman")
