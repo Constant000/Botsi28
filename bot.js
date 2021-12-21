@@ -27,7 +27,7 @@ client.on("message", message => {
   })
 client.on("message", message => {
     if (message.content === "oui") {
-      message.channel.send("Oh sympa ! il va bien ? tu veux des infos sur son projet de faire exploser BF ? (reponds par infos ou par non)")
+      message.channel.send("Oh sympa ! il va bien ? tu veux des infos sur son projet de faire exploser BF ? (reponds par yes ou par non)")
     }
   })
 client.on("message", message => {
@@ -36,7 +36,7 @@ client.on("message", message => {
     }
   })
 client.on("message", message => {
-    if (message.content === "infos") {
+    if (message.content === "yes") {
       message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagne à pacman, pour cela lance le jeu")
     }
   })
