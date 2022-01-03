@@ -11,7 +11,7 @@ client.once('ready', () => {
 client.login(process.env.token);
 
 client.on("guildMemberAdd",member => {
-   member.guild.channels.find("name","accueil").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille de commencer la conversation par bonjour')
+   member.guild.channels.find("name","accueil").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille aussi de chercher des informations pour commencer l'enigme')
 })
 
 client.on("message", message => {
@@ -21,7 +21,7 @@ client.on("message", message => {
   })
 client.on("message", message => {
     if (message.content === "!lien") {
-      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : +play https://youtu.be/jNcAT18p3b8")
+      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : +play https://www.youtube.com/watch?v=jNcAT18p3b8&ab_channel=ConstantDassonville")
     }
   })
 client.on("message", message => {
