@@ -32,6 +32,11 @@ client.on("message", message => {
     }
   })
 client.on("message", message => {
+    if (message.content === "Bonjour") {
+      message.channel.send("coucou toi, je suis Anne !, que fais-tu sur ce discord ? c'est Kevin qui t'envoie ? (reponds par oui ou par non)")
+    }
+  })
+client.on("message", message => {
     if (message.content === "oui") {
       message.channel.send("Oh sympa ! il va bien ? tu veux des infos sur son projet de faire exploser BF ? (reponds par yes ou par non)")
     }
