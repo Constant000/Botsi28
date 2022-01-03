@@ -11,7 +11,7 @@ client.once('ready', () => {
 client.login(process.env.token);
 
 client.on("guildMemberAdd",member => {
-   member.guild.channels.find("name","accueil").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille aussi de chercher des informations pour commencer l enigme')
+   member.guild.channels.find("name","discussion-avec-anne").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille aussi de chercher des informations dans ce discord pour commencer l enigme')
 })
 
 client.on("message", message => {
@@ -22,13 +22,13 @@ client.on("message", message => {
 client.on("message", message => {
     if (message.content === "!lien") {
       message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : ??play https://www.youtube.com/watch?v=jNcAT18p3b8&ab_channel=ConstantDassonville")
-      message.channel.send("C'est fou comment les messages se supprime vite ici, kevin n'a rien laissé au hasard")
+      message.channel.send("C'est fou comment les messages se suppriment vite ici, kevin n'a rien laissé au hasard")
     }
   })
 
 client.on("message", message => {
     if (message.content === "bonjour") {
-      message.channel.send("coucou toi, je suis Anne !, que fais tu sur ce discord ? c'est Kevin qui t'envoie ? (reponds par oui ou par non)")
+      message.channel.send("coucou toi, je suis Anne !, que fais-tu sur ce discord ? c'est Kevin qui t'envoie ? (reponds par oui ou par non)")
     }
   })
 client.on("message", message => {
@@ -43,7 +43,7 @@ client.on("message", message => {
   })
 client.on("message", message => {
     if (message.content === "yes") {
-      message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagne à pacman, pour cela lance le jeu à télécharger au lien suivant : https://www.mediafire.com/file/9mpd7hvaojaep80/Pacman.exe/file PS : Ne t inquiete pas c est tres securise")
+      message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagnent à pacman, pour cela lance le jeu à télécharger au lien suivant : https://www.mediafire.com/file/9mpd7hvaojaep80/Pacman.exe/file PS : Ne t inquiète pas c est trés securisé")
     }
   })
 
