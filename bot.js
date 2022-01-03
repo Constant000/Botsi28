@@ -11,7 +11,7 @@ client.once('ready', () => {
 client.login(process.env.token);
 
 client.on("guildMemberAdd",member => {
-   member.guild.channels.find("name","accueil").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille aussi de chercher des informations pour commencer l'enigme')
+   member.guild.channels.find("name","accueil").send('Bienvenue sur le discord ${member}, il faut etre poli avec anne, je te conseille aussi de chercher des informations pour commencer l enigme')
 })
 
 client.on("message", message => {
