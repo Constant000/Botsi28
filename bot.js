@@ -21,7 +21,7 @@ client.on("message", message => {
   })
 client.on("message", message => {
     if (message.content === "!lien") {
-      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : +play https://www.youtube.com/watch?v=jNcAT18p3b8&ab_channel=ConstantDassonville")
+      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : ??play https://www.youtube.com/watch?v=jNcAT18p3b8&ab_channel=ConstantDassonville")
       message.channel.send("C'est fou comment les messages se supprime vite ici, kevin n'a rien laissé au hasard")
     }
   })
