@@ -25,6 +25,11 @@ client.on("message", message => {
     }
   })
 client.on("message", message => {
+    if (message.content === "!lien") {
+      message.channel.send("C'est fou comment les messages se supprime vite ici, kevin n'a rien laissé au hasard")
+    }
+  })
+client.on("message", message => {
     if (message.content === "bonjour") {
       message.channel.send("coucou toi, je suis Anne !, que fais tu sur ce discord ? c'est Kevin qui t'envoie ? (reponds par oui ou par non)")
     }
