@@ -16,12 +16,12 @@ client.on("guildMemberAdd",member => {
 
 client.on("message", message => {
     if (message.content === "!indice") {
-      message.channel.send("essaye de réussir le pacman, tu auras un indice à la fin, pour trouver le pacman")
+      message.channel.send("essaye de réussir le pacman, tu auras un indice à la fin, pour trouver le pacman parle avec anne en lui envoyant bonjour")
     }
   })
 client.on("message", message => {
     if (message.content === "!lien") {
-      message.channel.send("copie colle ce message : +play https://www.youtube.com/watch?v=PAiY4r3fI0k&ab_channel=ConstantDassonville")
+      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : +play https://youtu.be/jNcAT18p3b8")
     }
   })
 client.on("message", message => {
