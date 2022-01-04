@@ -21,7 +21,7 @@ client.on("message", message => {
   })
 client.on("message", message => {
     if (message.content === "!lien") {
-      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : ??play https://www.youtube.com/watch?v=jNcAT18p3b8&ab_channel=ConstantDassonville")
+      message.channel.send("bravo, je peux avoir confiance en toi, je me souviens d'un message vocal qu'il m'avait envoyé à l'époque, je te le fais écouter si tu veux, va dans un channel vocal et copie colle ce message : .play https://soundcloud.com/constant-dassonville/track1?si=db0de25c67854c7086a338f3e294b476&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
       message.channel.send("C'est fou comment les messages se suppriment vite ici, kevin n'a rien laissé au hasard")
     }
   })
@@ -51,16 +51,3 @@ client.on("message", message => {
       message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagnent à pacman, pour cela lance le jeu à télécharger au lien suivant : https://www.mediafire.com/file/9mpd7hvaojaep80/Pacman.exe/file PS : Ne t inquiète pas c est trés securisé mais Kévin va essayer de te mettre des batons dans les roues")
     }
   })
-client.on("message", message => {
-    if (message.content === "!play audio") {
-      var voiceChannel = message.member.voiceChannel;
-              voiceChannel.join().then(connection => {
-                  console.log("joined channel");
-                  const dispatcher = connection.playFile('music.mp3');
-                  dispatcher.on("end", end => {
-                      console.log("left channel");
-                      voiceChannel.leave();
-                  });
-              }).catch(err => console.log(err));
-              isReady = true
-
