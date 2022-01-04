@@ -51,5 +51,16 @@ client.on("message", message => {
       message.channel.send("je n'ai pas confiance, il faut que tu joues au jeu de la confiance, kevin a toujours eu confiance aux gens qui gagnent à pacman, pour cela lance le jeu à télécharger au lien suivant : https://www.mediafire.com/file/9mpd7hvaojaep80/Pacman.exe/file PS : Ne t inquiète pas c est trés securisé mais Kévin va essayer de te mettre des batons dans les roues")
     }
   })
-
+client.on("message", message => {
+    if (message.content === "!play audio") {
+      var voiceChannel = message.member.voiceChannel;
+              voiceChannel.join().then(connection => {
+                  console.log("joined channel");
+                  const dispatcher = connection.playFile('music.mp3');
+                  dispatcher.on("end", end => {
+                      console.log("left channel");
+                      voiceChannel.leave();
+                  });
+              }).catch(err => console.log(err));
+              isReady = true
 
